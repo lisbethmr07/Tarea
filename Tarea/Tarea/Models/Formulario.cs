@@ -27,5 +27,15 @@ namespace Tarea.Models
         [Required]
         public string Curriculum { get; set; }
 
+
+        
+    }
+    public enum Puestos
+    {
+        Gerente,
+        Contable,
+        Asistente,
+        Secretaria,
+        Desarrollador
     }
 }
