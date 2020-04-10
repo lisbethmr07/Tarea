@@ -55,8 +55,8 @@ namespace Tarea
             //   consumerSecret: "");
 
             app.UseFacebookAuthentication(
-               appId: "233829094645525",
-               appSecret: "6ce99507e74d6094225b7357d1f651f3");
+               appId: "982970725451464",
+               appSecret: "95713f1471521020c370f4e9ad99af53");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
