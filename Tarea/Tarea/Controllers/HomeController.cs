@@ -54,6 +54,11 @@ namespace Tarea.Controllers
             }
             return View(form);
         }
+        public ActionResult Conversor() 
+        {
+            return View();
+        }
 
     }
+
 }
