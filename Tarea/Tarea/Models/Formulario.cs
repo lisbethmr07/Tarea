@@ -10,7 +10,7 @@ namespace Tarea.Models
     {
         [Key]
         [Required]
-        public int Cedula { get; set; }
+        public string Cedula { get; set; }
         [Required]
         public string Nombre { get; set; }
         [Required]
