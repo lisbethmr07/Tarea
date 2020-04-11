@@ -3,7 +3,27 @@
     ViewBag.Title = "Resultado";
 }
 
-<h2>Resultado</h2>
+<h2>Resultado de el formulario</h2>
+<div style="justify-content:center;">
+    Cedula: @Model.Cedula<br /><br />
+    Nombre: @Model.Nombre<br /><br />
+    Apellido: @Model.Apellido<br /><br />
+    Edad: @Model.Edad<br /><br />
+    Telefono: @Model.Telefono<br /><br />
+    Correo: @Model.Correo<br /><br />
+    Genero: <label id="Genero"></label><br /><br />
+    Puesto: @Model.Puesto<br /><br />
+    <a class="btn btn-danger" href="~/Curriculum/@ViewBag.curriculum">@ViewBag.curriculum</a><br /><br />
+    <img src="~/Imagen/@ViewBag.foto" style="width:380px;height:500px" />
+</div>
+<script>
+    var Genero = "@Model.Genero"
 
-<a href="~/Curriculum/@ViewBag.curriculum" >@ViewBag.curriculum</a>
-<img src="~/Imagen/@ViewBag.foto" style="width:auto;height:auto" />
+    if (Genero == "True") {
+        document.getElementById('Genero').innerHTML = 'Masculino';
+    } else {
+        document.getElementById('Genero').innerHTML = 'Femenino';
+    }
+    
+
+</script>
