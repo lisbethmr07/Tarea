@@ -176,6 +176,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ExcelController.cs" />
+    <Compile Include="Controllers\FiltroController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -248,6 +249,10 @@
     <Content Include="Views\Home\Resultado.cshtml" />
     <Content Include="Views\Home\Conversor.cshtml" />
     <Content Include="Views\Excel\Upload.cshtml" />
+    <Content Include="Views\Filtro\Index.cshtml" />
+    <Content Include="Views\Filtro\Noticias.cshtml" />
+    <Content Include="Views\Filtro\Musica.cshtml" />
+    <Content Include="Views\Filtro\Peliculas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
