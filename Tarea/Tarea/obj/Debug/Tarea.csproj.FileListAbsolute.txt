@@ -131,3 +131,5 @@ C:\Users\rando\source\repos\lisbethmr07\Tarea\Tarea\Tarea\bin\ExcelDataReader.pd
 C:\Users\rando\source\repos\lisbethmr07\Tarea\Tarea\Tarea\bin\ExcelDataReader.xml
 C:\Users\rando\source\repos\lisbethmr07\Tarea\Tarea\Tarea\bin\ExcelDataReader.DataSet.pdb
 C:\Users\rando\source\repos\lisbethmr07\Tarea\Tarea\Tarea\bin\ExcelDataReader.DataSet.xml
+C:\Users\rando\source\repos\lisbethmr07\Tarea\Tarea\Tarea\obj\Debug\Tarea.Migrations.InitialCreate.resources
+C:\Users\rando\source\repos\lisbethmr07\Tarea\Tarea\Tarea\obj\Debug\Tarea.csproj.GenerateResource.cache

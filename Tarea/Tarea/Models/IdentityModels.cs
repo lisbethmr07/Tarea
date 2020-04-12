@@ -30,6 +30,6 @@ namespace Tarea.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<Tarea.Models.Formulario> Formularios { get; set; }
+        //public System.Data.Entity.DbSet<Tarea.Models.Formulario> Formularios { get; set; }
     }
 }
