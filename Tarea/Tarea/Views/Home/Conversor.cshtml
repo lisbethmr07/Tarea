@@ -3,202 +3,624 @@
     ViewBag.Title = "Conversor";
 }
 
+<html>
+<head>
+
+</head>
+<body>
+
 <h2>Conversor</h2>
-<div>
-    
-    <input class="form-control" type="number" name="N1" id="N1" />
-    <select class="form-control" id="primer">
-        <option value="1">Centimetro</option>
-        <option value="2">Pulgadas</option>
-        <option value="3">Pies</option>
-        <option value="4">Metros</option>
-        <option value="5">Kilometros</option>
-        <option value="6">Millas</option>
-    </select>
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Longitudes |</a>
+        <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true"> Temperatura |</a>
+        <a class="nav-item nav-link active" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="true"> Masa |</a>
+        <a class="nav-item nav-link active" id="nav-Datos-tab" data-toggle="tab" href="#nav-Datos" role="tab" aria-controls="nav-Datos" aria-selected="true"> Datos</a>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div>
 
-</div><br />
+            <input class="form-control" type="number" name="N1" id="N1" />
+            <select class="form-control" id="primer">
+                <option value="1">Centimetro</option>
+                <option value="2">Pulgadas</option>
+                <option value="3">Pies</option>
+                <option value="4">Metros</option>
+                <option value="5">Kilometros</option>
+                <option value="6">Millas</option>
+            </select>
 
-<div>
+        </div>
+        <br />
 
-    <input class="form-control" type="text" name="N2" id="N2" readonly />
-    <select class="form-control" id="segundo">
-        <option value="1">Centimetro</option>
-        <option value="2">Pulgadas</option>
-        <option value="3">Pies</option>
-        <option value="4">Metros</option>
-        <option value="5">Kilometros</option>
-        <option value="6">Millas</option>
-    </select>
+        <div>
 
-</div><br /><br />
+            <input class="form-control" type="text" name="N2" id="N2" readonly />
+            <select class="form-control" id="segundo">
+                <option value="1">Centimetro</option>
+                <option value="2">Pulgadas</option>
+                <option value="3">Pies</option>
+                <option value="4">Metros</option>
+                <option value="5">Kilometros</option>
+                <option value="6">Millas</option>
+            </select>
 
-<div>
+        </div>
+        <br />
+        <br />
 
-   <input class="form-control btn-success" type="button" name="Convertir" id="Convertir" value="Convertir" />
+        <div>
 
+            <input class="form-control btn-success" type="button" name="Convertir" id="Convertir" value="Convertir" />
+
+        </div>
+    </div>
+
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div>
+
+            <input class="form-control" type="number" name="N11" id="N11" />
+            <select class="form-control" id="primer1">
+                <option value="1">Celcius</option>
+                <option value="2">Farenheit</option>
+                <option value="3">Kelvin</option>
+            </select>
+
+        </div>
+        <br />
+
+        <div>
+
+            <input class="form-control" type="text" name="N21" id="N21" readonly />
+            <select class="form-control" id="segundo1">
+                <option value="1">Celcius</option>
+                <option value="2">Farenheit</option>
+                <option value="3">Kelvin</option>
+            </select>
+
+        </div>
+        <br />
+        <br />
+
+        <div>
+
+            <input class="form-control btn-success" type="button" name="Convertir1" id="Convertir1" value="Convertir" />
+
+        </div>
+    </div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <div>
+
+            <input class="form-control" type="number" name="N12" id="N12" />
+            <select class="form-control" id="primer2">
+                <option value="1">Gramo</option>
+                <option value="2">Kilogramo</option>
+                <option value="3">Onza</option>
+                <option value="4">Libra</option>
+            </select>
+
+        </div>
+        <br />
+
+        <div>
+
+            <input class="form-control" type="text" name="N22" id="N22" readonly />
+            <select class="form-control" id="segundo2">
+                <option value="1">Gramo</option>
+                <option value="2">Kilogramo</option>
+                <option value="3">Onza</option>
+                <option value="4">Libra</option>
+            </select>
+
+        </div>
+        <br />
+        <br />
+
+        <div>
+
+            <input class="form-control btn-success" type="button" name="Convertir2" id="Convertir2" value="Convertir" />
+
+        </div>
+    </div>
+    <div class="tab-pane fade" id="nav-Datos" role="tabpanel" aria-labelledby="nav-Datos-tab">
+        <div>
+
+            <input class="form-control" type="number" name="N13" id="N13" />
+            <select class="form-control" id="primer3">
+                <option value="1">Bit</option>
+                <option value="2">Byte</option>
+                <option value="3">Kilobyte</option>
+                <option value="4">Megabyte</option>
+                <option value="5">Gigabyte</option>
+                <option value="6">Terabyte</option>
+            </select>
+
+        </div>
+        <br />
+
+        <div>
+
+            <input class="form-control" type="text" name="N23" id="N23" readonly />
+            <select class="form-control" id="segundo3">
+                <option value="1">Bit</option>
+                <option value="2">Byte</option>
+                <option value="3">Kilobyte</option>
+                <option value="4">Megabyte</option>
+                <option value="5">Gigabyte</option>
+                <option value="6">Terabyte</option>
+            </select>
+
+        </div>
+        <br />
+        <br />
+
+        <div>
+
+            <input class="form-control btn-success" type="button" name="Convertir3" id="Convertir3" value="Convertir" />
+
+        </div>
+    </div>
 </div>
 
+</body>
+</html>
+
+
 @section Scripts {
-<script>
+    <script>
+        $("#Convertir3").click(function () {
+
+            var num1 = $("#N13").val();
+
+            var op1 = $('#primer3').val()
+            var op2 = $('#segundo3').val()
+
+            var r = 0;
+            parseInt(num1);
+            if (op1 == 1 && op2 == 1) {
+                r = num1;
+                $("#N23").val(r);
+            }
+            else if (op1 == 1 && op2 == 2) {
+                r = num1 / 8;
+                $("#N23").val(r);
+            }
+            else if (op1 == 1 && op2 == 3) {
+                r = num1 / 8000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 1 && op2 == 4) {
+                r = num1 / 8000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 1 && op2 == 5) {
+                r = num1 / 8000000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 1 && op2 == 6) {
+                r = num1 / 8000000000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 2 && op2 == 1) {
+                r = num1 * 8;
+                $("#N23").val(r);
+            }
+            else if (op1 == 2 && op2 == 2) {
+                r = num1;
+                $("#N23").val(r);
+            }
+            else if (op1 == 2 && op2 == 3) {
+                r = num1 / 1000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 2 && op2 == 4) {
+                r = num1 / 1000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 2 && op2 == 5) {
+                r = num1 / 1000000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 2 && op2 == 6) {
+                r = num1 / 1000000000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 3 && op2 == 1) {
+                r = num1 * 8000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 3 && op2 == 2) {
+                r = num1 * 1000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 3 && op2 == 3) {
+                r = num1;
+                $("#N23").val(r);
+            }
+            else if (op1 == 3 && op2 == 4) {
+                r = num1 / 1000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 3 && op2 == 5) {
+                r = num1 / 1000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 3 && op2 == 6) {
+                r = num1 / 1000000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 4 && op2 == 1) {
+                r = num1 * 8000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 4 && op2 == 2) {
+                r = num1 * 1000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 4 && op2 == 3) {
+                r = num1 * 1000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 4 && op2 == 4) {
+                r = num1;
+                $("#N23").val(r);
+            }
+            else if (op1 == 4 && op2 == 5) {
+                r = num1 / 1000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 4 && op2 == 6) {
+                r = num1 / 1000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 5 && op2 == 1) {
+                r = num1 * 8000000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 5 && op2 == 2) {
+                r = num1 * 1000000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 5 && op2 == 3) {
+                r = num1 * 1000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 5 && op2 == 4) {
+                r = num1 * 1000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 5 && op2 == 5) {
+                r = num1;
+                $("#N23").val(r);
+            }
+            else if (op1 == 5 && op2 == 6) {
+                r = num1 / 1000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 6 && op2 == 1) {
+                r = num1 * 8000000000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 6 && op2 == 2) {
+                r = num1 * 1000000000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 6 && op2 == 3) {
+                r = num1 * 1000000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 6 && op2 == 4) {
+                r = num1 * 1000000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 6 && op2 == 5) {
+                r = num1 * 1000;
+                $("#N23").val(r);
+            }
+            else if (op1 == 6 && op2 == 6) {
+                r = num1;
+                $("#N23").val(r);
+            }
+        });
 
 
-    $("#Convertir").click(function () {
+        $("#Convertir2").click(function () {
 
-        var num1 = $("#N1").val();
+            var num1 = $("#N12").val();
 
-        var op1 = $('#primer').val()
-        var op2 = $('#segundo').val()
+            var op1 = $('#primer2').val()
+            var op2 = $('#segundo2').val()
 
-        var r = 0;
+            var r = 0;
 
-        if (op1 == 1 && op2 == 1) {
-            r = num1;
-            $("#N2").val(r);
-        }
-        else if (op1 == 1 && op2 == 2) {
-            r = num1 / 2.54;
-            $("#N2").val(r);
-        }
-        else if (op1 == 1 && op2 == 3) {
-            r = num1 / 30.48;
-            $("#N2").val(r);
-        }
-        else if (op1 == 1 && op2 == 4) {
-            r = num1 / 100;
-            $("#N2").val(r);
-        }
-        else if (op1 == 1 && op2 == 5) {
-            r = num1 / 100000;
-            $("#N2").val(r);
-        }
-        else if (op1 == 1 && op2 == 6) {
-            r = num1 / 160934;
-            $("#N2").val(r);
-        }
-        else if (op1 == 2 && op2 == 1) {
-            r = num1 * 2.54;
-            $("#N2").val(r);
-        }
-        else if (op1 == 2 && op2 == 2) {
-            r = num1;
-            $("#N2").val(r);
-        }
-        else if (op1 == 2 && op2 == 3) {
-            r = num1 / 12;
-            $("#N2").val(r);
-        }
-        else if (op1 == 2 && op2 == 4) {
-            r = num1 / 39.37;
-            $("#N2").val(r);
-        }
-        else if (op1 == 2 && op2 == 5) {
-            r = num1 / 39370;
-            $("#N2").val(r);
-        }
-        else if (op1 == 2 && op2 == 6) {
-            r = num1 / 63360;
-            $("#N2").val(r);
-        }
-        else if (op1 == 3 && op2 == 1) {
-            r = num1 * 30.48;
-            $("#N2").val(r);
-        }
-        else if (op1 == 3 && op2 == 2) {
-            r = num1 * 12;
-            $("#N2").val(r);
-        }
-        else if (op1 == 3 && op2 == 3) {
-            r = num1;
-            $("#N2").val(r);
-        }
-        else if (op1 == 3 && op2 == 4) {
-            r = num1 / 3.281;
-            $("#N2").val(r);
-        }
-        else if (op1 == 3 && op2 == 5) {
-            r = num1 / 3281;
-            $("#N2").val(r);
-        }
-        else if (op1 == 3 && op2 == 6) {
-            r = num1 / 5280;
-            $("#N2").val(r);
-        }
-        else if (op1 == 4 && op2 == 1) {
-            r = num1 * 100;
-            $("#N2").val(r);
-        }
-        else if (op1 == 4 && op2 == 2) {
-            r = num1 * 39.37;
-            $("#N2").val(r);
-        }
-        else if (op1 == 4 && op2 == 3) {
-            r = num1 * 3.281;
-            $("#N2").val(r);
-        }
-        else if (op1 == 4 && op2 == 4) {
-            r = num1;
-            $("#N2").val(r);
-        }
-        else if (op1 == 4 && op2 == 5) {
-            r = num1 / 1000;
-            $("#N2").val(r);
-        }
-        else if (op1 == 4 && op2 == 6) {
-            r = num1 / 1609;
-            $("#N2").val(r);
-        }
-        else if (op1 == 5 && op2 == 1) {
-            r = num1 * 100000;
-            $("#N2").val(r);
-        }
-        else if (op1 == 5 && op2 == 2) {
-            r = num1 * 39370;
-            $("#N2").val(r);
-        }
-        else if (op1 == 5 && op2 == 3) {
-            r = num1 * 3281;
-            $("#N2").val(r);
-        }
-        else if (op1 == 5 && op2 == 4) {
-            r = num1 * 1000;
-            $("#N2").val(r);
-        }
-        else if (op1 == 5 && op2 == 5) {
-            r = num1;
-            $("#N2").val(r);
-        }
-        else if (op1 == 5 && op2 == 6) {
-            r = num1 / 1.609;
-            $("#N2").val(r);
-        }
-        else if (op1 == 6 && op2 == 1) {
-            r = num1 * 160934;
-            $("#N2").val(r);
-        }
-        else if (op1 == 6 && op2 == 2) {
-            r = num1 * 63360;
-            $("#N2").val(r);
-        }
-        else if (op1 == 6 && op2 == 3) {
-            r = num1 * 5280;
-            $("#N2").val(r);
-        }
-        else if (op1 == 6 && op2 == 4) {
-            r = num1 * 1609;
-            $("#N2").val(r);
-        }
-        else if (op1 == 6 && op2 == 5) {
-            r = num1 * 1.609;
-            $("#N2").val(r);
-        }
-        else if (op1 == 6 && op2 == 6) {
-            r = num1;
-            $("#N2").val(r);
-        }
+            if (op1 == 1 && op2 == 1) {
+                r = num1;
+                $("#N22").val(r);
+            }
+            else if (op1 == 1 && op2 == 2) {
+                r = num1 / 1000;
 
-    });
+                $("#N22").val(r);
+            }
+            else if (op1 == 1 && op2 == 3) {
+                r = (num1 / 28.35);
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 1 && op2 == 4) {
+                r = (num1 / 454);
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 2 && op2 == 1) {
+                r = (num1 * 1000);
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 2 && op2 == 2) {
+                r = num1;
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 2 && op2 == 3) {
+                r = (num1 * 35.274);
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 2 && op2 == 4) {
+                r = (num1 * 2.205);
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 3 && op2 == 1) {
+                r = (num1 * 28.35);
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 3 && op2 == 2) {
+                r = (num1 / 35.274);
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 3 && op2 == 3) {
+                r = num1;
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 3 && op2 == 4) {
+                r = (num1 / 16);
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 4 && op2 == 1) {
+                r = (num1 * 454);
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 4 && op2 == 2) {
+                r = (num1 / 2.205);
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 4 && op2 == 3) {
+                r = (num1 * 16);
+
+                $("#N22").val(r);
+            }
+            else if (op1 == 4 && op2 == 4) {
+                r = num1;
+
+                $("#N22").val(r);
+            }
+        });
+
+        $("#Convertir1").click(function () {
+
+            var num1 = $("#N11").val();
+
+            var op1 = $('#primer1').val()
+            var op2 = $('#segundo1').val()
+
+            var r = 0;
+
+            if (op1 == 1 && op2 == 1) {
+                r = num1;
+                $("#N21").val(r);
+            }
+            else if (op1 == 1 && op2 == 2) {
+                r = (num1 * 9 / 5) + 35;
+               
+                $("#N21").val(r);
+            }
+            else if (op1 == 1 && op2 == 3) {
+                r = 273.15 + parseInt(num1);
+                $("#N21").val(r);
+            }
+            else if (op1 == 2 && op2 == 1) {
+                r = (num1-32)* 5/9 ;
+                $("#N21").val(r);
+            }
+            else if (op1 == 2 && op2 == 2) {
+                r = num1;
+                $("#N21").val(r);
+            }
+            else if (op1 == 2 && op2 == 3) {
+                r = (num1-32)* 5/9 + 273.15;
+                $("#N21").val(r);
+            }
+            else if (op1 == 3 && op2 == 1) {
+                r = num1 - 273.15;
+                $("#N21").val(r);
+            }
+            else if (op1 == 3 && op2 == 2) {
+                r = (num1 - 273.15) * 9/5 + 32 ;
+                $("#N21").val(r);
+            }
+            else if (op1 == 3 && op2 == 3) {
+                r = num1;
+                $("#N21").val(r);
+            }
+        });
+
+        $("#Convertir").click(function () {
+
+            var num1 = $("#N1").val();
+
+            var op1 = $('#primer').val()
+            var op2 = $('#segundo').val()
+
+            var r = 0;
+
+            if (op1 == 1 && op2 == 1) {
+                r = num1;
+                $("#N2").val(r);
+            }
+            else if (op1 == 1 && op2 == 2) {
+                r = num1 / 2.54;
+                $("#N2").val(r);
+            }
+            else if (op1 == 1 && op2 == 3) {
+                r = num1 / 30.48;
+                $("#N2").val(r);
+            }
+            else if (op1 == 1 && op2 == 4) {
+                r = num1 / 100;
+                $("#N2").val(r);
+            }
+            else if (op1 == 1 && op2 == 5) {
+                r = num1 / 100000;
+                $("#N2").val(r);
+            }
+            else if (op1 == 1 && op2 == 6) {
+                r = num1 / 160934;
+                $("#N2").val(r);
+            }
+            else if (op1 == 2 && op2 == 1) {
+                r = num1 * 2.54;
+                $("#N2").val(r);
+            }
+            else if (op1 == 2 && op2 == 2) {
+                r = num1;
+                $("#N2").val(r);
+            }
+            else if (op1 == 2 && op2 == 3) {
+                r = num1 / 12;
+                $("#N2").val(r);
+            }
+            else if (op1 == 2 && op2 == 4) {
+                r = num1 / 39.37;
+                $("#N2").val(r);
+            }
+            else if (op1 == 2 && op2 == 5) {
+                r = num1 / 39370;
+                $("#N2").val(r);
+            }
+            else if (op1 == 2 && op2 == 6) {
+                r = num1 / 63360;
+                $("#N2").val(r);
+            }
+            else if (op1 == 3 && op2 == 1) {
+                r = num1 * 30.48;
+                $("#N2").val(r);
+            }
+            else if (op1 == 3 && op2 == 2) {
+                r = num1 * 12;
+                $("#N2").val(r);
+            }
+            else if (op1 == 3 && op2 == 3) {
+                r = num1;
+                $("#N2").val(r);
+            }
+            else if (op1 == 3 && op2 == 4) {
+                r = num1 / 3.281;
+                $("#N2").val(r);
+            }
+            else if (op1 == 3 && op2 == 5) {
+                r = num1 / 3281;
+                $("#N2").val(r);
+            }
+            else if (op1 == 3 && op2 == 6) {
+                r = num1 / 5280;
+                $("#N2").val(r);
+            }
+            else if (op1 == 4 && op2 == 1) {
+                r = num1 * 100;
+                $("#N2").val(r);
+            }
+            else if (op1 == 4 && op2 == 2) {
+                r = num1 * 39.37;
+                $("#N2").val(r);
+            }
+            else if (op1 == 4 && op2 == 3) {
+                r = num1 * 3.281;
+                $("#N2").val(r);
+            }
+            else if (op1 == 4 && op2 == 4) {
+                r = num1;
+                $("#N2").val(r);
+            }
+            else if (op1 == 4 && op2 == 5) {
+                r = num1 / 1000;
+                $("#N2").val(r);
+            }
+            else if (op1 == 4 && op2 == 6) {
+                r = num1 / 1609;
+                $("#N2").val(r);
+            }
+            else if (op1 == 5 && op2 == 1) {
+                r = num1 * 100000;
+                $("#N2").val(r);
+            }
+            else if (op1 == 5 && op2 == 2) {
+                r = num1 * 39370;
+                $("#N2").val(r);
+            }
+            else if (op1 == 5 && op2 == 3) {
+                r = num1 * 3281;
+                $("#N2").val(r);
+            }
+            else if (op1 == 5 && op2 == 4) {
+                r = num1 * 1000;
+                $("#N2").val(r);
+            }
+            else if (op1 == 5 && op2 == 5) {
+                r = num1;
+                $("#N2").val(r);
+            }
+            else if (op1 == 5 && op2 == 6) {
+                r = num1 / 1.609;
+                $("#N2").val(r);
+            }
+            else if (op1 == 6 && op2 == 1) {
+                r = num1 * 160934;
+                $("#N2").val(r);
+            }
+            else if (op1 == 6 && op2 == 2) {
+                r = num1 * 63360;
+                $("#N2").val(r);
+            }
+            else if (op1 == 6 && op2 == 3) {
+                r = num1 * 5280;
+                $("#N2").val(r);
+            }
+            else if (op1 == 6 && op2 == 4) {
+                r = num1 * 1609;
+                $("#N2").val(r);
+            }
+            else if (op1 == 6 && op2 == 5) {
+                r = num1 * 1.609;
+                $("#N2").val(r);
+            }
+            else if (op1 == 6 && op2 == 6) {
+                r = num1;
+                $("#N2").val(r);
+            }
+
+        });
 
 
 
-</script>
+    </script>
 }
